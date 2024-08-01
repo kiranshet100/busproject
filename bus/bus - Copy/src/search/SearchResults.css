@@ -1,0 +1,126 @@
+/* SearchResults.css */
+.results-page {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff4d4d;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.search-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.results-content {
+  padding: 20px;
+}
+
+.results-content h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.bus-card-link {
+  text-decoration: none; /* Remove underline for the link */
+}
+
+.bus-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  flex-direction: row; /* Ensure row direction */
+}
+
+.bus-image-container {
+  flex-shrink: 0;
+  width: 80px; /* Fixed width for the image container */
+}
+
+.bus-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.bus-details {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Allow bus details to take remaining space */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensure the row takes full width */
+}
+
+.column {
+  margin-right: 20px;
+  flex: 1; /* Allow columns to take remaining space */
+}
+
+.column span, .column label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .results-content h1 {
+    font-size: 18px;
+  }
+
+  .bus-card {
+    flex-direction: row; /* Ensure row direction */
+    align-items: center;
+    
+  }
+
+  .bus-image-container {
+    width: 100px; /* Smaller image container on mobile */
+    flex-shrink: 0;
+  }
+
+  .bus-details {
+    margin-left: 10px;
+    margin-top: 0; /* Remove top margin */
+    flex: 1;
+     /* Allow bus details to take remaining space */
+  }
+
+  .row {
+    flex-direction: row; /* Keep row direction */
+    align-items: center; /* Align items to center */
+    justify-content: space-between;
+     /* Distribute space between columns */
+  }
+
+  .column {
+    margin-right: 10px;
+    flex: 1; /* Allow columns to take remaining space */
+  }
+}
